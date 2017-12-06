@@ -6,6 +6,9 @@
   "repository": "git@github.com:shahramg92/Videogame-library-react.git",
   "author": "Shahram Ghassemi <shahramg92@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "api": "babel-node server.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
