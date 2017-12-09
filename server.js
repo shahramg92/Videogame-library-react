@@ -3,11 +3,11 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 const axios = require('axios');
-// We gotta import our models and routes
+// We need to import our models and routes
 import Game from './app/models/game';
 import { getGames, getGame, postGame, deleteGame } from './app/routes/game';
 
-const app = express(); // Our express server!
+const app = express(); // express server
 const port = process.env.PORT || 8080;
 
 // DB connection through Mongoose

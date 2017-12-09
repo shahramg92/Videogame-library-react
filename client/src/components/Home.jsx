@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import Welcome from './Welcome'
 
 export default class Home extends PureComponent {
   active (path) {
@@ -28,6 +29,7 @@ export default class Home extends PureComponent {
               </div>
               {this.props.children}
             </div>
+            <Welcome />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default class Layout extends PureComponent {
   render () {
@@ -22,7 +22,7 @@ export default class Layout extends PureComponent {
         </nav>
         {this.props.children}
         <footer className="text-center">
-          <p>© 2016 Samuele Zaza</p>
+          <p>© 2017 Shahram Ghassemi</p>
         </footer>
       </div>
     );
