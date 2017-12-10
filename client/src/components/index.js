@@ -19,4 +19,4 @@ export {
   Archive,
   Modal,
   Welcome
-}
+};
