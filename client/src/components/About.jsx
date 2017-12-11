@@ -1,4 +1,4 @@
-import Reac, { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 
 export default class About extends PureComponent {
   render () {
