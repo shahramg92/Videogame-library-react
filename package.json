@@ -15,6 +15,7 @@
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "immutable": "^3.8.2",
     "mongoose": "^4.13.6",
     "morgan": "^1.9.0",
     "path": "^0.12.7",
@@ -23,6 +24,7 @@
     "react-router": "3.0.0",
     "react-router-dom": "^4.2.2",
     "reactstrap": "^5.0.0-alpha.4",
+    "redux": "^3.7.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
   },
