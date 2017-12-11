@@ -1,7 +1,11 @@
 import React from 'react';
+import {Provider} from 'react-redux';
+import configureStore from './store';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {AddGameContainer, GamesContainer} from './containers';
 import {Home, Archive, Welcome, About, Contact} from './components';
+
+const store = configureStore();
 
 const routes = (
   <BrowserRouter>
