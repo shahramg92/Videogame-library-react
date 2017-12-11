@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { hashHistory } from 'react-router';
 import { Form } from '../components';
 
 export default class AddGameContainer extends Component {

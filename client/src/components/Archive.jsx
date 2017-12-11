@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
+import GamesContainer from './GamesContainer';
 
 export default class Layout extends PureComponent {
   render () {
@@ -18,6 +19,7 @@ export default class Layout extends PureComponent {
                 <img src="https://cdn.filestackcontent.com/nLnmrZQaRpeythR4ezUo" className="header-logo" />
               </Link>
             </div>
+            <GamesContainer />
           </div>
         </nav>
         {this.props.children}
