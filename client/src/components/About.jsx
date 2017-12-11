@@ -5,7 +5,7 @@ export default class About extends PureComponent {
     return (
       <div className="inner cover">
         <h1 className="cover-heading">Javascript Everywhere</h1>
-        <p className="lead"> paragraph. Trying to learn react</p>
+        <p className="lead">Test paragraph. Trying to learn react</p>
       </div>
     );
   }
