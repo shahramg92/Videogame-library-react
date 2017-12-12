@@ -14,8 +14,8 @@ const routes = (
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/games/add" component={AddGameContainer} />
         <Route path="/games" component={Archive} />
-        <Route path="/add" component={AddGameContainer} />
       </Switch>
     </BrowserRouter>
   </Provider>
