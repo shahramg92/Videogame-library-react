@@ -31,16 +31,16 @@ switch(process.env.NODE_ENV) {
     case 'build':
         config = merge(
             common,
-            { devtool: 'source-map' } // SourceMaps on separate file
+            {devtool: 'source-map'} // SourceMaps on separate file
          );
         break;
     case 'development':
         config = merge(
             common,
-            { devtool: 'eval-source-map' }, // Default value
+            {devtool: 'eval-source-map'}, // Default value
             loaders.devServer({
                 host: process.env.host,
-                port: 8080
+                port: 3000
             })
         );
 }
