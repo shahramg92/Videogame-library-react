@@ -8,6 +8,7 @@ import * as gamesActionCreators from '../actions/games';
 class GamesContainer extends PureComponent {
   constructor (props) {
     super(props);
+    console.log(props);
     this.toggleModal = this.toggleModal.bind(this);
     this.deleteGame = this.deleteGame.bind(this);
     this.setSearchBar = this.setSearchBar.bind(this);
@@ -65,4 +66,5 @@ function mapDispatchToProps (dispatch) {
     gamesActions: bindActionCreators(gamesActionCreators, dispatch)
   };
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(GamesContainer);
