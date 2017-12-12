@@ -1,4 +1,5 @@
 import React, {PureComponent} from 'react';
+import {withRouter} from "react-router-dom";
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {Form} from '../components';
@@ -14,7 +15,7 @@ class AddGameContainer extends PureComponent {
   submit (event) {
     event.preventDefault();
     this.props.gamesActions.postGame();
-    hashHistory.push('/games');
+    this.props.history.push('/games');
   }
   uploadPicture () {
     this.props.filestackActions.uploadPicture();

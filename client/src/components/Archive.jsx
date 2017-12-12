@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { Link } from 'react-router-dom';
+import React, {PureComponent} from 'react';
+import {Link} from 'react-router-dom';
 import GamesContainer from '../containers';
 
 export default class Layout extends PureComponent {

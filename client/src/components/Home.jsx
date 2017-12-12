@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { Link } from 'react-router-dom';
+import React, {PureComponent} from 'react';
+import {Link} from 'react-router-dom';
 import Welcome from './Welcome'
 
 export default class Home extends PureComponent {
