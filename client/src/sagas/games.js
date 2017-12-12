@@ -46,7 +46,7 @@ const deleteServerGame = (id) => {
 }
 
 const postServerGame = (game) => {
-  return fetch('http://localhost:8080/games', {
+  return fetch('http://localhost:8081/games', {
     headers: new Headers({
       'Content-Type': 'application/json'
     }),
