@@ -1,4 +1,4 @@
-import { takeLatest } from 'redux-saga';
+import {takeLatest} from 'redux-saga';
 import {
 	put,
 	select,
@@ -67,7 +67,7 @@ function* getGames () {
 }
 
 function* deleteGame (action) {
-  const { id } = action;
+  const {id} = action;
   const games = yield select(selectedGames);
   try {
     yield call(deleteServerGame, id);

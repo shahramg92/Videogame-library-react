@@ -3,7 +3,7 @@ import {
   watchDeleteGame,
   watchPostGame
 } from './games';
-import { watchUploadPicture } from './filestack';
+import {watchUploadPicture} from './filestack';
 
 export default function* rootSaga () {
   yield [

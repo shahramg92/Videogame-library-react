@@ -38,13 +38,13 @@ app.use((req, res, next) => {
   next();
 });
 
-const api = axios.create({
-  baseURL: 'https://api-2445582011268.apicast.io',
-  timeout: 1000,
-  headers: {'user-key': '1b1ecdd75c3f25365dde131f1415a69f',
-            'Accept': 'application/json'
-  }
-});
+// const api = axios.create({
+//   baseURL: 'https://api-2445582011268.apicast.io',
+//   timeout: 1000,
+//   headers: {'user-key': '1b1ecdd75c3f25365dde131f1415a69f',
+//             'Accept': 'application/json'
+//   }
+// });
 
 // API routes
 app.route('/games')

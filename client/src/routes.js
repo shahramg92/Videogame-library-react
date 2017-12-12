@@ -11,11 +11,11 @@ const routes = (
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/games" component={Archive} />
-          <Route path="add" component={AddGameContainer} />
+        <Route exact path="/" component={Home}/>
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/games" component={Archive} />
+        <Route path="add" component={AddGameContainer} />
       </Switch>
     </BrowserRouter>
   </Provider>

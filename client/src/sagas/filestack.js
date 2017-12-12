@@ -1,6 +1,6 @@
-import { takeLatest } from 'redux-saga';
-import { put, call } from 'redux-saga/effects';
-import { UPLOAD_PICTURE } from '../constants/filestack';
+import {takeLatest} from 'redux-saga';
+import {put, call} from 'redux-saga/effects';
+import {UPLOAD_PICTURE} from '../constants/filestack';
 import {
   uploadPictureSuccess,
   uploadPictureFailure
