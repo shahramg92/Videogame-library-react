@@ -1,7 +1,6 @@
 import React, {PureComponent} from 'react';
 import {Link} from 'react-router-dom';
 import {GamesContainer} from '../containers';
-import {Game} from '../components';
 
 export default class Layout extends PureComponent {
   render () {

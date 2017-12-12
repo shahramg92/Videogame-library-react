@@ -38,6 +38,7 @@ class GamesContainer extends PureComponent {
 
   render () {
     const {games, selectedGame, searchBar} = this.props;
+    console.log(games);
     return (
       <div>
         <Modal game={selectedGame} />

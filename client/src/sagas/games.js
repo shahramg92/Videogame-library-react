@@ -1,4 +1,5 @@
 import {takeLatest} from 'redux-saga';
+import axios from 'axios';
 import {
 	put,
 	select,
@@ -27,16 +28,23 @@ const selectedPicture = (state) => {
 }
 
 const fetchGames = () => {
-  return fetch('http://localhost:8080/games', {
-    headers: new Headers({
-      'Content-Type': 'application/json'
-    })
-  })
-  .then(response => response.json());
+	return axios.get('http://localhost:8081/games');
+	
+	// var p = fetch('http://localhost:8081/games', {
+	// 	mode: 'no-cors',
+	// 	headers: new Headers({
+  //     'Content-Type': 'application/json'
+  //   })
+  // })
+	// .then(function (r) {
+	// 	return r.narf()
+	// });
+  //
+	// return p;
 };
 
 const deleteServerGame = (id) => {
-  return fetch(`http://localhost:8080/games/${id}`, {
+  return fetch(`http://localhost:8081/games/${id}`, {
     headers: new Headers({
       'Content-Type': 'application/json',
     }),
@@ -61,7 +69,7 @@ function* getGames () {
     const games = yield call(fetchGames);
     yield put(getGamesSuccess(games));
   } catch (err) {
-    console.log('here');
+    console.log(err);
     yield put(getGamesFailure());
   }
 }

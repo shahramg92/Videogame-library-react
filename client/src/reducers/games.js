@@ -19,13 +19,14 @@ export default (state = initialState, action) => {
   // GET_GAMES_SUCCESS case return a new state with the fetched games in the state
     case DELETE_GAME_SUCCESS:
     case GET_GAMES_SUCCESS: {
-      return state.merge({ list: action.games });
+      console.log(action.games.data);
+      return state.merge({ list: action.games.data });
     }
     case SET_SEARCH_BAR: {
       return state.merge({ searchBar: action.keyword });
     }
     case SHOW_SELECTED_GAME: {
-      return state.merge({ selectedGame: action.game });
+      return state.merge({ selectedGame: action.game.data });
     }
     case DELETE_GAME_FAILURE:
   // In case of failure it simplies returned a new empty state
