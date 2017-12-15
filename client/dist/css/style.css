@@ -209,7 +209,9 @@ nav {
 }
 
 .header-logo {
-  width: 300px;
+  width: 350px;
+  height: 4em;
+  margin-top: 10px;
 }
 .btn-submit {
   background-color: #0c8a27;

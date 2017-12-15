@@ -1,6 +1,14 @@
 import React, {PureComponent} from 'react';
 
 export default class Modal extends PureComponent {
+  // modal_classes () {
+  //   console.log(this.props.game);
+  //   if (this.props.game && this.props.game.name) {
+  //     return "modal fade show";
+  //   }
+  //     return "modal fade";
+  // }{this.modal_classes()}
+
   render () {
     const { _id, img, name, description, year, picture } = this.props.game;
     return(

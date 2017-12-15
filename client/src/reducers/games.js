@@ -26,7 +26,7 @@ export default (state = initialState, action) => {
       return state.merge({ searchBar: action.keyword });
     }
     case SHOW_SELECTED_GAME: {
-      return state.merge({ selectedGame: action.game.data });
+      return state.merge({ selectedGame: action.game });
     }
     case DELETE_GAME_FAILURE:
   // In case of failure it simplies returned a new empty state

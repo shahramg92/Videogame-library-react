@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 const axios = require('axios');
+const cors = require('cors')
 // We need to import our models and routes
 import Game from './app/models/game';
 import { getGames, getGame, postGame, deleteGame } from './app/routes/game';
@@ -31,12 +32,7 @@ app.use(morgan('dev'));
 app.use(express.static(__dirname + '/client/dist'));
 
 // Enable CORS so that we can make HTTP request from webpack-dev-server
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE,OPTIONS');
-  //res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+app.use(cors());
 
 // const api = axios.create({
 //   baseURL: 'https://api-2445582011268.apicast.io',

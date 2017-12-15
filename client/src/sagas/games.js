@@ -29,7 +29,7 @@ const selectedPicture = (state) => {
 
 const fetchGames = () => {
 	return axios.get('http://localhost:8081/games');
-	
+
 	// var p = fetch('http://localhost:8081/games', {
 	// 	mode: 'no-cors',
 	// 	headers: new Headers({
@@ -99,7 +99,6 @@ function* postGame () {
   } catch (e) {
     yield put(postGameFailure());
   }
-
 }
 
 function* watchGetGames () {

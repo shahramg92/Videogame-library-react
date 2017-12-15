@@ -20,7 +20,7 @@ class GamesContainer extends PureComponent {
   }
 
   toggleModal (index) {
-    this.props.gameActions.showSelectedGame(this.props.games[index])
+    this.props.gamesActions.showSelectedGame(this.props.games[index])
     $('#game-modal').modal();
   }
 
