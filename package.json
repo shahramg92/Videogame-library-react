@@ -7,8 +7,8 @@
   "author": "Shahram Ghassemi <shahramg92@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "api": "babel-node server.js",
-    "start": "NODE_ENV=development webpack-dev-server",
+    "start": "babel-node server.js",
+    "frontend": "NODE_ENV=development webpack-dev-server",
     "build": "NODE_ENV=build webpack"
   },
   "dependencies": {
