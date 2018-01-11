@@ -18,7 +18,8 @@ const options = {
 }; // Just a bunch of options for the db connection
 mongoose.Promise = global.Promise;
 // Don't forget to substitute it with your connection string
-mongoose.connect('mongodb://localhost/retrodb', {useMongoClient: true});
+const MONGO_URL = process.env.MONGODB_URI || 'mongodb://localhost/retrodb';
+mongoose.connect(MONGO_URL, {useMongoClient: true});
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
