@@ -19,6 +19,8 @@ import {
   postGameFailure
 } from '../actions/games';
 
+const API_URL = process.env.API_URL || 'http://localhost:8081';
+
 const selectedGames = (state) => {
   return state.getIn(['games', 'list']).toJS();
 }
@@ -28,23 +30,11 @@ const selectedPicture = (state) => {
 }
 
 const fetchGames = () => {
-	return axios.get('http://localhost:8081/games');
-
-	// var p = fetch('http://localhost:8081/games', {
-	// 	mode: 'no-cors',
-	// 	headers: new Headers({
-  //     'Content-Type': 'application/json'
-  //   })
-  // })
-	// .then(function (r) {
-	// 	return r.narf()
-	// });
-  //
-	// return p;
+	return axios.get(API_URL + '/games');
 };
 
 const deleteServerGame = (id) => {
-  return fetch(`http://localhost:8081/games/${id}`, {
+  return fetch(`${API_URL}/games/${id}`, {
     headers: new Headers({
       'Content-Type': 'application/json',
     }),
@@ -54,7 +44,7 @@ const deleteServerGame = (id) => {
 }
 
 const postServerGame = (game) => {
-  return fetch('http://localhost:8081/games', {
+  return fetch(API_URL + '/games', {
     headers: new Headers({
       'Content-Type': 'application/json'
     }),
