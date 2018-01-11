@@ -43527,7 +43527,7 @@ var _temp = function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(process) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -43555,6 +43555,8 @@ var _marked = /*#__PURE__*/regeneratorRuntime.mark(getGames),
     _marked5 = /*#__PURE__*/regeneratorRuntime.mark(watchDeleteGame),
     _marked6 = /*#__PURE__*/regeneratorRuntime.mark(watchPostGame);
 
+var API_URL = process.env.API_URL || 'http://localhost:8081';
+
 var selectedGames = function selectedGames(state) {
   return state.getIn(['games', 'list']).toJS();
 };
@@ -43564,23 +43566,11 @@ var selectedPicture = function selectedPicture(state) {
 };
 
 var fetchGames = function fetchGames() {
-  return _axios2.default.get('http://localhost:8081/games');
-
-  // var p = fetch('http://localhost:8081/games', {
-  // 	mode: 'no-cors',
-  // 	headers: new Headers({
-  //     'Content-Type': 'application/json'
-  //   })
-  // })
-  // .then(function (r) {
-  // 	return r.narf()
-  // });
-  //
-  // return p;
+  return _axios2.default.get(API_URL + '/games');
 };
 
 var deleteServerGame = function deleteServerGame(id) {
-  return fetch('http://localhost:8081/games/' + id, {
+  return fetch(API_URL + '/games/' + id, {
     headers: new Headers({
       'Content-Type': 'application/json'
     }),
@@ -43591,7 +43581,7 @@ var deleteServerGame = function deleteServerGame(id) {
 };
 
 var postServerGame = function postServerGame(game) {
-  return fetch('http://localhost:8081/games', {
+  return fetch(API_URL + '/games', {
     headers: new Headers({
       'Content-Type': 'application/json'
     }),
@@ -43782,6 +43772,8 @@ var _temp = function () {
     return;
   }
 
+  __REACT_HOT_LOADER__.register(API_URL, 'API_URL', '/Users/shahram/Repositories/Videogame-library-react/client/src/sagas/games.js');
+
   __REACT_HOT_LOADER__.register(selectedGames, 'selectedGames', '/Users/shahram/Repositories/Videogame-library-react/client/src/sagas/games.js');
 
   __REACT_HOT_LOADER__.register(selectedPicture, 'selectedPicture', '/Users/shahram/Repositories/Videogame-library-react/client/src/sagas/games.js');
@@ -43808,6 +43800,7 @@ var _temp = function () {
 }();
 
 ;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
 /* 530 */
