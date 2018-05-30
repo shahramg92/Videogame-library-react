@@ -8,5 +8,5 @@ filepicker.setKey("AWSLFdDFYSm6VCFYa3ArEz");
 
 ReactDOM.render(
   Routes,
-  document.getElementById('content')
+  document.getElementById('content)
 );

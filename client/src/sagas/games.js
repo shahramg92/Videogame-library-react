@@ -19,7 +19,8 @@ import {
   postGameFailure
 } from '../actions/games';
 
-const API_URL = process.env.API_URL || 'http://localhost:8081';
+const API_URL = 'https://oldschoolgames.herokuapp.com';
+// const API_URL = process.env.API_URL || 'http://localhost:8081';
 
 const selectedGames = (state) => {
   return state.getIn(['games', 'list']).toJS();
