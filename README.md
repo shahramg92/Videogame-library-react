@@ -3,6 +3,8 @@ Old School Games is a video game library meant for the old school gamers out the
 
 This app uses the MERN stack (MongoDB, Express.js, React-Redux and Node.js) and uses the Filestack API to store images. While it doesn't really have practical use for the average person, it can be used for individuals who want to see a visual representation of their video game collection displayed on their computer or mobile devices. You can add video games to the database, as well as add some information and cover art for them. This project was fun for me to create because it has a video game theme, font, and wallpapers and just looks great. While adding games to the database is not quite as fun as playing the actual games, it still fun to see your video game collection displayed on the screen.
 
+
+
 When you land on the main page, you can click browse which will take you to the video game library, or you can click on "About" or "Contact" in the top right to get a bit more information about the app as well as my contact information.
 
 <img src="screenshots/main.jpg"/>
