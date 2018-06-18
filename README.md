@@ -3,15 +3,11 @@ Old School Games is a video game library meant for the old school gamers out the
 
 This app uses the MERN stack (MongoDB, Express.js, React-Redux and Node.js) and uses the Filestack API to store images. It uses AWS hosting for the front-end and Heroku for the back-end.
 
-
-
-
-
 When you land on the main page, you can click browse which will take you to the video game library, or you can click on "About" or "Contact" in the top right to get a bit more information about the app as well as my contact information.
 
 <img src="screenshots/main.jpg"/>
 
-When you click browse, you will see the video game library displayed. All the games displayed have been previously added and stored on the MongoDB add-on on Heroku. To add a video game, simply click the "Add a new Game" button in the top right.
+When you click browse, you will see the video game library displayed. All the games displayed have been previously added and stored on the MongoDB add-on on Heroku. To add a video game, simply click the "Add a new Game" button in the top left.
 
 <img src="screenshots/browse.jpg"/>
 
